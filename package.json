@@ -2,13 +2,17 @@
   "name": "jsreport-server",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "jsreport-studio-start --extensions.studio.extensionsInDevMode=studio",
     "jsreport": "jsreport"
   },
   "jsreport": {
     "entryPoint": "server.js"
   },
   "dependencies": {
-    "jsreport": "2.10.0"
+    "jsreport": "2.10.0",
+    "mime-types": "2.1.27"
+  },
+  "devDependencies": {
+    "jsreport-studio-dev": "1.6.0"
   }
 }
